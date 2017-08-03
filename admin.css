@@ -1,0 +1,9 @@
+.nav nav-pills{
+    text-align: right;
+}
+.active{
+    display: inline-block;
+}
+.tab-pane fade in active{
+    text-decoration-color: yellow;
+}

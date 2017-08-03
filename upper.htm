@@ -1,0 +1,119 @@
+<html>
+   <head>
+      <link href="stylee.css" rel="stylesheet" type="text/css" media="all" />
+      <style>
+#font
+{
+   color:white;
+   font-size: 60;
+}
+         
+a {
+    color:#bed6e2;
+}
+      </style>
+
+      <script>
+function validateForm() {
+    var x = document.forms["myform"]["username"].value;
+    if (x == null || x == "") {
+        alert("Please enter-NAME :)");
+        return false;
+    }
+}
+</script>
+
+   </head>
+   <body bgcolor="black" >
+
+
+
+      <table  class="logsin">
+         <tr>
+            <td>
+               <form name="myform" action="login.php" target="_top" onsubmit="return validateForm()" method="POST">
+                   <input type="text" placeholder="enter user-name"  name="username" style="background-color:LightGreen" />
+                   <input type="password" name="password" placeholder="enter password"style="background-color:LightGreen">   
+                   <button name="subject" type="submit" value="submit">login</button>
+               </form>
+             </td>         
+                  <td>
+                       <form action="newsignup.html" target="same">
+                     <button name="subject" type="submit" value="submit">signup</button>
+                      </form>
+                           </td>
+            </tr>
+          <tr>
+         <td>
+          
+        <tr>   
+         <td>
+             <table  cellpadding="5" cellspacing="0">
+                  <td>
+            <a href="#">My Account</a> 
+            <a href="#">Wishlist</a> 
+            <a href="#">Checkout</a>
+         </td>
+             
+               
+            
+              <td><font color="yellow">item:</font>
+                 </td>
+                 <td>
+             <a href="cart.php" target="_parent"><img src="images/cart.jpg" height="30" width="60"></a>
+          </td>
+                  <td>
+              <font color="white"> CART</font>
+          </td>
+             </table>
+        </td>
+      </tr>
+      <tr>
+         <td>
+               <table  cellpadding="2">
+                   <form action="searchproduct.php" target="_top">
+                  <td>
+                     <input type="text" placeholder="search..." name="search"/>
+                  </td>
+                  <td>
+                     <input type="image" src="images/search.jpeg" value="submit" width="20" height="20">
+                  </td>
+                       </form>
+             </table>
+          </td>
+      </tr>
+         </td>
+        
+              
+              
+              
+              
+              
+       </tr>    
+   </table>  
+       
+   
+      <table>
+         <tr> 
+            <h1><td id="font"><font color="white">COMICOME</font></td></h1>
+
+            <td><a href="homestart.html" target="_parent"><img src="images/comicome.png" title="comicome" height="100" width="100"></a></td>
+         </tr>  
+      </table>
+   <div id="menu-wrapper">
+      <div id="menu" class="container">
+         <ul>
+            <li class="current_page_item"><a href="lower.htm" accesskey="1" target="same" title="">Homepage</a></li>
+            <li><a href="aboutus.html" accesskey="2"  target="same" title="">About us</a></li>
+            <li><a href="news/retrylinks.html" target="same" title="">NEWS</a></li>
+            <li><a href="" accesskey="4" target="same" title="">EVENTS</a></li>
+            <li><a href="collections.html" target="same">Collections<span> </span></a></li>
+            <li><a href="">Sale<span> </span></a></li>
+            <li><a href="contact.html" accesskey="5" target="same" title="">Contact Us</a></li>
+
+         </ul>
+      </div>
+   </div>
+</body>
+</html>
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>ADMIN PAGE</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+<div class="container">
+ <h2><b><FONT COLOR="WHITE">ADMIN PAGE</FONT></b></h2><hr>
+    
+    <PRE>                                                                                                                                                                                                                                                                         <b>WELCOME  ADMIN!</b>      <a href="homestart.html"><b><u>LOG OUT</u></b></a>                                                                                </PRE>
+    s
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#home">USER MANAGEMENT</a></li>
+        <li><a data-toggle="pill" href="#menu1">PRODUCT MANAGENMENT</a></li>
+        <li><a data-toggle="pill" href="#menu2">CATEGORY MANAGEMENT</a></li>
+        <li><a data-toggle="pill" href="#menu3">EVENTS MANAGEMENT</a></li>
+        <li><a data-toggle="pill" href="#menu4">NEWS MANAGEMENT</a></li>
+      </ul>
+
+  <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3 align="center"><b><u><font color="white"> USER MANAGEMENT</font></u></b></h3>
+          <p><table align="center" background="images\blacktrans.png">
+                                   
+                           <tr>  <td><form name="input" action="newsignup.html" method="POST">
+                               <br><font color="white"><h4><b>ENTER THE USER NAME</b></h4></font></td>
+                               <td><br><input type="submit" value="  ADD     "></form></td></tr>
+              
+                          <tr>  <td><form name="input" action="deleteuser.php" method="get">
+<br><font color="yellow"><h4>REMOVE THE USER&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="name" size="10"></h4></td>
+                                             <td><br>&nbsp;<input type="submit" value="DELETE "></form>
+</td></tr>
+                             
+    <tr><td><form name="input" action="displayuser.php" method="get"><br><br><br><font color="white"><h4><b>VIEW ALL THE  USERS PRESENT IN THE DATABASE</b></h4></font></td>
+                                
+                                <td><br><br><br><input type="submit" value="VIEW ENTERED "></form></td>
+                            </tr>      
+                      
+                      </table></p>
+        </div>
+    
+        <div id="menu1" class="tab-pane fade">
+            <h3 align="center"><b><u><font color="white">PRODUCT MANAGENMENT</font></u></b></h3>
+          <p><table align="center" background="images\blacktrans.png">
+                  
+                                                
+                           <tr><td><form name="input" action="product_form.php" method="get">
+<br><font color="white"><h4><b>ENTER THE PRODUCT NAME</b></h4></font></td>
+                                             <td><br><input type="submit" value="  ADD     "></form></td>
+              
+                          <tr>  <td><form name="input" action="prod_del.php" method="get">
+                              <br><font color="yellow"><h4><b>REMOVE THE PRODUCT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input name="name" type="text" size="10"></b></h4></td>
+                                             <td><br>&nbsp;<input type="submit" value="DELETE "></form></td>
+
+                            <tr><td><form name="input" action="prod_show.php" method="get"><br><br><br><font color="white"><h4><b>VIEW THE CURRENTLY ENTERED PRODUCTS TO DATABASE </b></h4></font></td>
+                                
+                                <td><br><br><br><input type="submit" value="VIEW ADDED "></form></td>
+                            </tr>         
+                         </tr>
+                      
+                          </form>
+                      </table></p>
+        </div>
+
+        <div id="menu2" class="tab-pane fade">
+            <h3 align="center"><b><u><font color="white">CATEGORY MANAGEMENT</font></u></b></h3>
+          <p><table align="center" background="images\blacktrans.png" height="400" width="900">
+            
+             <tr><td><form name="input" action="category_prodform.php" method="get">
+<br><font color="white"><h4><b>ENTER THE CATEGORY </b></h4></font></td>
+                                             <td><br><input type="submit" value="  ADD     "></form></td>
+              
+                                   
+                              <tr><td><form name="input" action="category/category_dis.php" method="get"><br><br><br><font color="white"><h4><b>VIEW ALL THE PRESENT CATEGORY IN THE DATABASE </b></h4></font></td>
+                                
+                                <td><br><br><br>&nbsp;<input type="submit" value="VIEW ENTERED "></form></td>
+                            </tr>      
+                                  
+                         </tr>
+                      
+                      </table></p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h3 align="center"><b><u><font color="white">EVENTS MANAGEMENT</font></u></b></h3>
+          <p><table align="center" background="images\blacktrans.png">
+                          <form name="input" action="demo_form_action.asp" method="get">
+                      
+                           <tr>
+                               <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">EVENT                                               CATEGORIES
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>EVENT TYPES</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INDOOR    EVENTS</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">OUTDOOR   EVENTS</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ONLINE    EVENTS</a></li>
+                                    </ul>
+                                  </div>
+      
+                               </td>  
+             <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">                                               LOCATION LIST
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>LOCATIONS</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">BANGALORE</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CHENNAI</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HYDERABAD</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">KOLKATA</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MUMBAI</a></li>
+                                    </ul>
+                                  </div>
+       
+                               </td> 
+                              
+                                  <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">                                               EVENT TAGS
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>TAGS</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUIZ CONTEST</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">DRAWING CONTEST</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANIMATION CONTEST</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GAMING CONTEST</a></li>
+                                    </ul>
+                                  </div>
+        
+                               </td>    
+                                            
+                                    <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">                                               EVENT TIMINGS
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>TIMINGS</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FORENOON SESSION</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">POST LUNCH SESSION</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NIGHT SESSION</a></li>
+                                    </ul>
+                                  </div>
+        
+                               </td> 
+
+                                    <td>
+                               
+                               &nbsp;   <INPUT TYPE ="TEXT" SIZE="15"><B><font color="white">SEARCH</font></B>
+       
+                               </td>  
+            
+                         </tr>
+            
+            
+                      
+                          </form>
+                      </table></p>
+        </div>
+        <div id="menu4" class="tab-pane fade">
+            <h3 align="center"><b><u><font color="white">NEWS MANAGEMENT</font></u></b></h3>
+          <p><table align="center" background="images\blacktrans.png">
+                          <form name="input" action="demo_form_action.asp" method="get">
+                      
+                           <tr>
+                               <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">NEWS                                               CATEGORIES
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>CATEGORIES</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">DC NEWS</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MARVEL NEWS</a></li>    
+                                    </ul>
+                                  </div>
+       </div> 
+                               </td>  
+             <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">                                               DATE RANGE
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>RANGES</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PAST HOUR</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PAST DAY</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PAST WEEK</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">THE BEGINING OF TIME</a></li>
+                                 </ul>
+                                  </div>
+       
+                               </td> 
+                              
+                                  <td>
+                               
+                                   <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">                                               PAGE SIZE
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><B>SIZES</B></a></li>
+                                      <li role="presentation" class="divider"></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">20 PER PAGE</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 PER PAGE</a></li>    
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 PER PAGE</a></li>
+                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 PER PAGE</a></li>
+                                    </ul>
+                                  </div>
+      
+                               </td>    
+                                            
+                                    <td>
+                               
+                               &nbsp;   <INPUT TYPE ="TEXT" SIZE="15"><B><font color="white">SEARCH</font></B>
+      
+                               </td>   
+            
+                         </tr>
+            
+            
+                      
+                          </form>
+                      </table></p>
+        </div>
+      </div>
+</div>
+<head>
+      <title>LOGIN</title>
+       <link rel="icon" href="img/b.jpeg" />
+      </head>
+      <style> 
+body {
+   background:url("images/b.jpg");
+   background-size: 1300px 700px;
+   background-repeat: no-repeat;
+}
+     </style>
+      <body>
+         
+
+</body>
+    
+</html>

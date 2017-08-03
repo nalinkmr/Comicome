@@ -1,0 +1,99 @@
+<html>
+<head>
+          <link href="stylee.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style> 
+body {
+   background:url("images/signupp.jpg");
+   background-size: 1300px 700px;
+   background-repeat: no-repeat;
+}
+     </style>
+    <body>
+     <style>
+td.add {background-color:lightblue}
+td.add1 {background-color:grey}
+td.add2 {background-color:lavender}
+td.add3 {background-color:}
+td.add4 {background-color:lightblue}
+    
+      </style>
+    </head>
+    <font color="grey"> <h1 align="right">SIGN UP</h1>
+            <font color="black"> <hr>
+<table>
+    <tr>
+                                 <th>
+                                    <form action="signup.php" method="POST">
+                                       <table align="right">
+                                          <tr>
+                                             <td class="add1"><h3>CREATE AN ACCOUNT</h3></td>
+                                          </tr>
+                                          <tr>
+                                             <td class ="add2" align="right">
+                                                 Name</td>  
+                                             <td class ="add2"align="left">
+                                                 <input type="text" placeholder= "enter name" name="name" />
+                                                 <span class="error">* <?php echo $nameError;?></span>
+
+                                              </td>                                          
+                                            
+                                             <td class ="add2"align="left"><input type="text"  placeholder="enter surname" name="lastname" /></td>
+                                          </tr>
+                                          <tr>
+                                             <td class ="add2"align="right">Email</td>
+                                             <td class ="add2"align="left">
+                                                 <input type="text" placeholder="enter e-mail"  name="email" />
+                                                 <span class="error">* <?php echo $emailError;?></span>
+
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                             <td class ="add2"align="right">reEmail</td>
+                                             <td class ="add2"align="left">
+                                                 <input type="text" placeholder="enter e-mail"  name="remail" />
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                             <td class ="add2"align="right">Password</td>
+                                             <td class ="add2"align="left"><input type="password" name="password" />
+                                             <span class="error">*<?php echo $passwordError;?></span></td>
+
+                                          </tr>
+                                           <tr>
+                                             <td class ="add2"align="right">Confirm Password</td>
+                                             <td class ="add2"align="left"><input type="password" name="confirmpassword" />
+                                                <span class="error">*<?php echo $passwordError;?></span></td>
+                                                                            
+                                           </tr>
+                                          
+                                                      <tr>
+                                                         <td class="add1">
+                                                            <span><h5>SEX</h5></span>
+                                                         </td><br>
+                                                      </tr>
+                                                      <tr>
+                                                         <td class="add2"> <input type="radio" name="sex" value="male">Male<br></td>
+                                                         <td class="add2">   <input type="radio" name="sex" value="female">Female</td>
+
+                                                      </tr>
+                                                      <tr>
+                                                         <td>
+                                                            <input type="image" src="images/submit.jpg" name="submit" value="Submit" class="submit" width="48" height="48">
+                                                         </td>
+                                                      </tr>
+                                                   </form>
+                                                   <tr>
+                                                      <td>
+                                                         <form>  <input type="image" src="images/reset.jpg" alt="submit" width="48" height="48">
+                                                         </form>
+                                                      </td>
+                                                   </tr>
+
+                                                </th>
+                                                <tr>
+                                                </table>
+                                             </tr>
+                                          </table>
+                                       </body>
+                                    </html> 
